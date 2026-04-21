@@ -41,7 +41,7 @@ If we want to test the pre trained model, we can skip this step and run the subs
 
 ### Step 3: Update File Paths
 Ensure that the path of the model and the test images are replaced with the actual path.If we are saving our model and test images on drive,change the paths accordingly.
-    - Model weights path (line 38): 
+    - Model weights path : 
       model = YOLO("/content/drive/MyDrive/runs/detect/train/weights/best.pt")
     - Image paths for inference : 
       Update the paths pointing to `/content/drive/MyDrive/traffic lights/...` to point to the actual locations of your test images.
@@ -49,11 +49,11 @@ There is no need to run the code blocks that re train the model,or import the da
 
 ### Step 4: Execute
 Run the script. The script will:
-    1. Install required packages.
-    2. Authorize Google Drive access.
-    3. Train the model (run it only when u want to re train the model otherwise use best.pt).
-    4. Run detect_lights() function on the test images provided at the bottom of the script.
-    5. Display the results using Matplotlib.
-    6. Save the final output image to `/content/final_output.jpg`.
+    - Install required packages.
+    - Authorize Google Drive access.
+    - Train the model (run it only when u want to re train the model otherwise use best.pt).
+    - Run detect_lights() function on the test images provided at the bottom of the script.
+    - Display the results using Matplotlib.
+    - Save the final output image to `/content/final_output.jpg`.
 
   Link for test images-https://drive.google.com/drive/folders/16Jyuf8K6gqFHVZwULSlyXSt4EZjmZdWc?usp=sharing
